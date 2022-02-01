@@ -1,0 +1,348 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     M           Y                               C                O                  D                E 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body{
+    background: linear-gradient(150deg, #d160a8, #a05ed0, #54b0cc, #53ca93);
+    width: 100%;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 14s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.the-squares .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background:  rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: newAnimate 10s ease infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes newAnimate {
+    0%,100% {
+        transform: translateY(1vh);
+        opacity: 0;
+    }
+    50%{ 
+        transform: translateY(8vh);
+        opacity: 1;
+    }
+}
+
+.the-squares .square:nth-child(1){
+    top: 5%;
+    right: 21%;
+    width: 100px;
+    height: 100px;
+}
+
+.the-squares .square:nth-child(2){
+    top: 45%;
+    left: 19%;
+    width: 100px;
+    height: 100px;
+}
+
+.the-squares .square:nth-child(3){
+    top: 60%;
+    left: 73.5%;
+    width: 60px;
+    height: 60px;
+}
+
+.the-squares .square:nth-child(4){
+    top: 80%;
+    left: 35%;
+    width: 50px;
+    height: 50px;
+}
+
+.the-squares .square:nth-child(5){
+    top: 3%;
+    right: 45%;
+    width: 80px;
+    height: 80px;
+}
+
+.main-content-login {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: -5%;
+    width: 50vw;
+    height: 65vh;
+    position: relative;
+    background:  rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Apptitle{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+}
+
+.Apptitle h2{
+    width: 80%;
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-left: 6%;
+}
+
+.Apptitle .fa-bug {
+    margin-left: -15%;
+    margin-top: 2%;
+    width: 20%;
+    color: white;
+    font-size: 25px;
+}
+
+
+.wrapper-signup {
+    height: 100%;
+    width: 49%;
+}
+
+.wrapper-signup h1{
+    margin-top: 1%;
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.wrapper-signup p{
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.bar {
+    width: 2%;
+    height: 100%;
+}
+
+.bar-line{
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    height: 70%;
+    margin-top: 230%;
+    border-radius: 20px;
+    background:  rgba(255, 255, 255, 0.4);
+}
+
+.wrapper-login {
+    width: 49%;
+    height: 100%;
+}
+
+.wrapper-login h1{
+    margin-top: 7%;
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.wrapper-login p{
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+form input[type="text"]{
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 11%;
+    margin-top: 4%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    padding-top: 2%;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+form input[type="text"]::placeholder{
+    color: grey;
+}
+
+form input[type="password"]{
+    width: 80%;
+    margin-left: 9%;
+    margin-right: 11%;
+    margin-top: 4%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    padding-top: 2%;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+form input[type="text"]::placeholder{
+    color: grey;
+}
+
+form button[type="submit"]{
+    background: white;
+    color: #666;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 6%;
+    width: 34%;
+    margin-left: 32%;
+    margin-right: 34%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-radius: 25px;
+}
+
+form button[type="submit"]:hover{
+    opacity: 0.7;
+}

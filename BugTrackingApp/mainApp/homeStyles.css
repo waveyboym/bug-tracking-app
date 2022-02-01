@@ -1,0 +1,558 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     M           Y                               C                O                  D                E 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+* {
+    font-family: 'Dongle', sans-serif;;
+}
+
+:root {
+    --blue: rgb(60, 187, 255);
+    --backgroundWhite: white;
+    --white: white;
+    --textboxColours: white;
+    --black: rgb(0, 0, 0);
+    --cardBoxShadow: 0 7px 25px rgba(0, 0, 0, 0.213);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.378);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.323);
+    --bugBottomBorder: 2px solid rgba(0, 0, 0, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.296);
+}
+
+.darkBlue-theme-variables {
+    --blue: rgb(3, 118, 181);
+    --backgroundWhite: #303059;
+    --white: rgb(67, 80, 146);
+    --textboxColours: rgb(64, 101, 150);
+    --black: rgb(228, 228, 228);
+    --cardBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.631);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.761);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.768);
+    --bugBottomBorder: 2px solid rgba(255, 255, 255, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.611);
+}
+
+.pink-theme-variables {
+    --blue: rgb(137, 3, 181);
+    --backgroundWhite: #593059;
+    --white: rgb(146, 67, 140);
+    --textboxColours: rgb(146, 64, 150);
+    --black: rgb(228, 228, 228);
+    --cardBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.631);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.761);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.768);
+    --bugBottomBorder: 2px solid rgba(255, 255, 255, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.611);
+}
+
+.lightGreen-theme-variables {
+    --blue: rgb(3, 181, 113);
+    --backgroundWhite: #355930;
+    --white: rgb(122, 146, 67);
+    --textboxColours: rgb(107, 150, 64);
+    --black: rgb(228, 228, 228);
+    --cardBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.631);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.761);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.768);
+    --bugBottomBorder: 2px solid rgba(255, 255, 255, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.611);
+}
+
+.grey-theme-variables {
+    --blue: rgb(3, 118, 181);
+    --backgroundWhite: #404640;
+    --white: rgb(115, 118, 110);
+    --textboxColours: rgb(148, 153, 144);
+    --black: rgb(228, 228, 228);
+    --cardBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.631);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.761);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.768);
+    --bugBottomBorder: 2px solid rgba(255, 255, 255, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.611);
+}
+
+.pureDark-theme-variables {
+    --blue: rgb(3, 118, 181);
+    --backgroundWhite: #111111;
+    --white: rgb(29, 29, 29);
+    --textboxColours: rgb(53, 53, 53);
+    --black: rgb(228, 228, 228);
+    --cardBoxShadow: 0 0px 15px rgba(0, 0, 0, 0.631);
+    --completeBarShadow: 0 7px 25px rgba(0, 0, 0, 0.761);
+    --bugDetailsShadow: 0 7px 25px rgba(0, 0, 0, 0.768);
+    --bugBottomBorder: 2px solid rgba(255, 255, 255, 0.213);
+    --addNewBugTextBoxShadow: 0 5px 15px rgba(0, 0, 0, 0.611);
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--backgroundWhite);
+}
+
+.header-section {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.Apptitle {
+    width: 82%;
+    display: flex;
+}
+
+.Apptitle h1 {
+    margin-top: -0.15%;
+    font-size: 30px;
+    margin-left: 2%;
+    margin-right: 1%;
+    color: var(--black);
+}
+
+.darkMode {
+    width: 5%;
+}
+
+.logOut {
+    width: 5%;
+}
+
+.userProfile {
+    width: 8%;
+    display: flex;
+}
+
+.userProfile h1 {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 3.5%;
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.bugIcon ion-icon{
+    margin-top: 8.5%;
+    font-size: 22px;
+    color: var(--black);
+}
+
+.darkModeIcon ion-icon{
+    font-size: 21px;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.logOutIcon ion-icon{
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.darkModeIcon ion-icon:hover{
+    color: var(--blue);
+}
+
+.logOutIcon ion-icon:hover{
+    color: var(--blue);
+}
+
+.userIcon ion-icon{
+    font-size: 26px;
+    color: var(--black);
+}
+
+.main-section {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1%;
+}
+
+.cardBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardBox h1 {
+    margin-left: 4%;
+    width: 96%;
+    font-size: 60px;
+    color: var(--black);
+}
+
+.card {
+    margin-top: 2%;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--white);
+    box-shadow: var(--cardBoxShadow);
+    border-radius: 10px;
+}
+
+.card:hover {
+    transition: all 0.6s ease;
+    background: var(--blue);
+}
+
+.card ion-icon{
+    font-size: 40px;
+    width: 30%;
+    color: var(--black);
+}
+
+.bugCount {
+    width: 70%;
+    display: flex;
+}
+
+.bugCount h2 {
+    margin-top: 4%;
+    font-size: 80px;
+    color: var(--black);
+}
+
+.bugCount h3 {
+    font-size: 25px;
+    margin-top: 8.9%;
+    margin-left: 6%;
+    color: var(--black);
+}
+
+.bugRatio{
+    width: 70%;
+    display: flex;
+}
+
+.bugRatio h2 {
+    margin-top: 2%;
+    font-size: 40px;
+    color: var(--black);
+}
+
+.bugRatio h3 {
+    font-size: 20px;
+    margin-top: 3.7%;
+    margin-left: 3%;
+    color: var(--black);
+}
+
+.bar-area {
+    width: 100%;
+}
+
+.complete-bar {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 8px;
+    margin-bottom: 1.4%;
+    background: var(--white);
+    box-shadow: var(--completeBarShadow);
+    border-radius: 10px;
+}
+
+.bar-to-fill {
+    background: var(--blue);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 0%;
+    height: 8px;
+}
+
+.card:hover .complete-bar {
+    transition: all 0.5s ease;
+    background: var(--blue);
+}
+
+.card:hover .bar-to-fill {
+    transition: all 0.3s ease;
+    background: var(--white);
+}
+
+.main-content-section {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.bug-details {
+    margin-left: 2.1%;
+    margin-right: 4%;
+    width: 73.8%;
+    background: var(--white);
+    box-shadow: var(--bugDetailsShadow);
+    border-radius: 10px;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0.5%;
+}
+
+.bug-details h1 {
+    margin-left: 5%;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    font-size: 45px;
+    color: var(--black);
+}
+
+.bug-details h2 {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 65%;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.bug-details h3{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 9%;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.bug-details h4 {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 1.6%;
+    width: 7.4%;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.bug-details h5 {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 17%;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.bug {
+    margin-top: 1%;
+    border-bottom: var(--bugBottomBorder);
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    text-align: center;
+}
+
+.bug:last-child{
+    border-bottom: 0px none rgba(0, 0, 0, 0);
+}
+
+.bugDescription {
+    width: 65%;
+}
+
+.bugStatus, .bugActions {
+    width: 10%;
+}
+
+.bugDateTime {
+    width: 15%;
+}
+
+.bugDescription p, .bugStatus p, .bugActions p, .bugDateTime p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 2%;
+    color: var(--black);
+}
+
+.bugStatus p, .bugActions p, .bugDateTime p { 
+    padding-top: 2%;
+}
+
+.bugActions p {
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 15px;
+}
+
+.bugActions p:hover{
+    opacity: 0.7;
+    transition: all 0.5s ease;
+}
+
+.addNewBugs {
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    width: 18%;
+    margin-right: 2.1%;
+    background: var(--white);
+    box-shadow: var(--bugDetailsShadow);
+    border-radius: 10px;
+}
+
+.addNewBugs h1 {
+    margin-top: 5%;
+    margin-bottom: 0.8%;
+    font-size: 35px;
+    color: var(--black);
+}
+
+.addNewBugs input[type="text"]{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    margin-bottom: 7%;
+    box-shadow: var(--addNewBugTextBoxShadow);
+    background: var(--textboxColours);
+}
+
+.addNewBugsinput[type="text"]::placeholder{
+    color: var(--black);
+}
+
+textarea {
+    width: 80%;
+    height: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    box-shadow: var(--addNewBugTextBoxShadow);
+    font-size: 18px;
+    letter-spacing: 2px;
+    resize: none;
+    border-radius: 5px;
+    color: var(--black);
+    background: var(--textboxColours);
+}
+
+.addNewBugs button[type="submit"]{
+    background: var(--blue);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1%;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-radius: 5px;
+}
+
+.addNewBugs button[type="submit"]:hover{
+    opacity: 0.8;
+}

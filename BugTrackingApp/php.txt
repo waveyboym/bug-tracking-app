@@ -1,0 +1,21 @@
+CREATE TABLE bugtrackusers(
+    USER_ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    USERS_UID TINYTEXT NOT NULL,
+    USERS_PWD LONGTEXT NOT NULL,
+    USERS_EMAIL TINYTEXT NOT NULL
+);
+
+CREATE TABLE problems (
+    PROBLEM_ID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    problem_description TINYTEXT NOT NULL,
+    resolved_not_resolved TINYTEXT NOT NULL,
+    date_logged TINYTEXT NOT NULL,
+    PROBLEMS_ID INT NOT NULL,
+    FOREIGN KEY (PROBLEMS_ID) REFERENCES bugtrackusers(USER_ID)
+);
+
+INSERT INTO problems VALUES(1,"bug on line 14 of main.cpp","unresolved", NOW(), 1);
+
+INSERT INTO problems VALUES(1,"bug on line 300 of enhance.java","resolved", NOW(), 1);
+
+bug on index.php resolved

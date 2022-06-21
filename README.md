@@ -1,3 +1,10 @@
+# preview images
+![landingpage](landingpage.png "login signup page")
+
+![lighttheme](lighttheme.png "light mode theme")
+
+![darktheme](darktheme.png "dark mode theme")
+
 # access app without downloading the files here
 https://bugtrackingapp-waveyboym.herokuapp.com/
 

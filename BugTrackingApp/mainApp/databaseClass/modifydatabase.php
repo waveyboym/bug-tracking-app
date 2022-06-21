@@ -3,10 +3,10 @@ class modifydatabase{
 
     protected function connect(){
         try{
-            $username = "waveyboym";
-            $password = '$SM8D8MZDN-a!VW';
+            $username = "root";
+            $password = "";
 
-            $database = new PDO('mysql:host=db4free.net;dbname=waveyboym_db', $username, $password);
+            $database = new PDO('mysql:host=localhost;dbname=bug_tracking_app_database', $username, $password);
             return $database;
         }
         catch(PDOException $e){

@@ -101,7 +101,7 @@ input, select {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 body{
-    background: linear-gradient(150deg, #d160a8, #a05ed0, #54b0cc, #53ca93);
+    background: linear-gradient(150deg, #360033, #3b006b, #06307e, #0b8793);
     width: 100%;
     height: 100vh;
     background-size: 400% 400%;
@@ -127,9 +127,6 @@ body{
     position: absolute;
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background:  rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     animation: newAnimate 10s ease infinite;
@@ -194,9 +191,6 @@ body{
     align-items: center;
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     flex-wrap: wrap;
 }
@@ -294,14 +288,11 @@ form input[type="text"]{
     letter-spacing: 2px;
     padding-bottom: 2%;
     border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-form input[type="text"]::placeholder{
-    color: grey;
+form input[type="text"]::placeholder, form input[type="password"]::placeholder{
+    color: rgb(219, 219, 219);
 }
 
 form input[type="password"]{
@@ -318,15 +309,9 @@ form input[type="password"]{
     letter-spacing: 2px;
     padding-bottom: 2%;
     border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-form input[type="text"]::placeholder{
-    color: grey;
-}
 
 form button[type="submit"]{
     background: white;

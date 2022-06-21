@@ -1,0 +1,5 @@
+C:\Users\User\Documents\GitHub\bug-traking-app
+
+https://bugtrackingapp-waveyboym.herokuapp.com/ | https://git.heroku.com/bugtrackingapp-waveyboym.git
+
+website link: https://bugtrackingapp-waveyboym.herokuapp.com (for testing purposes)

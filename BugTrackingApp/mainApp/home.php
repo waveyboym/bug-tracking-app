@@ -68,12 +68,14 @@
 
         <div class="main-content-section">
             <div class="bug-details">
-                <h1>Bugs</h1>
-                <h2>Bug description</h2>
-                <h3>status</h3>
-                <h4>actions</h4>     
-                <h5>date added</h5>
-            </div>
+                <div class="title-headings">
+                    <h1>Bugs</h1>
+                    <h2>Bug description</h2>
+                    <h3>status</h3>
+                    <h4>actions</h4>     
+                    <h5>date added</h5>
+                    </div>
+                </div>
             <div class="addNewBugs">
                 <h1>Add a new bug: </h1>
                     <textarea  id="bugDescriptionText" name="actualDescription">enter description</textarea>
